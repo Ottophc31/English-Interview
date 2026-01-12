@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Friend Julia - English Presentation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        /* 1. ESTILO GERAL - CORES VIBRANTES E AMIGÁVEIS */
+        * { box-sizing: border-box; }
+        body {
+            background-color: #fdfbfb;
+            display: grid;
+            gap: 60px;
+            grid-template-columns: 1fr;
+            margin: 0;
+            padding: 80px 0;
+            place-items: center;
+        }
+
+        .slide-container {
+            background: white;
+            border-radius: 40px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            font-family: 'Quicksand', sans-serif;
+            height: 720px;
+            justify-content: center;
+            overflow: hidden;
+            padding: 70px;
+            position: relative;
+            width: 1280px;
+            border: 10px solid #f0f4ff;
+        }
+
+        /* 2. TIPOGRAFIA */
+        h1, h2, h3 {
+            color: #2d3436;
+            font-family: 'Fredoka', sans-serif;
+            margin: 0;
+        }
+
+        h1 { font-size: 85px; color: #6c5ce7; }
+        .slide-title { 
+            font-size: 52px; 
+            margin-bottom: 35px; 
+            color: #6c5ce7;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        h3 { font-size: 34px; color: #a29bfe; margin-bottom: 12px; }
+
+        p, li { font-size: 26px; line-height: 1.6; color: #636e72; font-weight: 500; }
+
+        /* 3. ELEMENTOS VISUAIS */
+        .flex-row {
+            display: flex;
+            gap: 50px;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .card {
+            background: #f9f9ff;
+            border-radius: 30px;
+            padding: 35px;
+            flex: 1;
+            border: 3px dashed #dcdde1;
+        }
+
+        .profile-circle {
+            width: 380px;
+            height: 380px;
+            border-radius: 50%;
+            border: 12px solid #a29bfe;
+            overflow: hidden;
+            box-shadow: 0 15px 30px rgba(108, 92, 231, 0.2);
+            margin: 0 auto;
+        }
+        .profile-circle img { width: 100%; height: 100%; object-fit: cover; }
+
+        .photo-frame {
+            border-radius: 25px;
+            transform: rotate(-1.5deg);
+            border: 15px solid white;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            overflow: hidden;
+            width: 500px;
+            height: 350px;
+        }
+        .photo-frame img { width: 100%; height: 100%; object-fit: cover; }
+
+        .tag {
+            display: inline-block;
+            background: #6c5ce7;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 60px;
+            font-size: 20px;
+            margin-right: 12px;
+            margin-bottom: 12px;
+        }
+
+        .emoji-list { list-style: none; padding: 0; }
+        .emoji-list li { margin-bottom: 25px; display: flex; align-items: flex-start; gap: 20px; }
+        .emoji-list span { font-size: 45px; }
+
+        /* Decoração de Fundo */
+        .blob {
+            position: absolute;
+            z-index: 0;
+            filter: blur(50px);
+            opacity: 0.15;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Slide 1: Welcome -->
+<div class="slide-container">
+    <div class="blob" style="width: 400px; height: 400px; background: #6c5ce7; top: -100px; right: -100px;"></div>
+    <div style="text-align: center; position: relative; z-index: 1;">
+        <div class="profile-circle">
+            <!-- Espaço reservado para a foto da Julia -->
+            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=1000&auto=format&fit=crop" alt="[Imagem de perfil da Julia]">
+        </div>
+        <h1 style="margin-top: 30px;">Meet Julia!</h1>
+        <p style="font-size: 32px; color: #a29bfe;">An interview with my amazing friend from Brazil</p>
+    </div>
+</div>
+
+<!-- Slide 2: Personality & Friendship -->
+<div class="slide-container">
+    <h2 class="slide-title">✨ Who is she?</h2>
+    <div class="flex-row">
+        <div style="flex: 1.2;">
+            <p>Julia is 18 years old and, just like me, she represents our Brazil! I see her as someone incredibly <strong>kind</strong>, a <strong>loyal listener</strong>, and very <strong>clever</strong>.</p>
+            <div style="margin-top: 40px;">
+                <span class="tag">#BFF</span>
+                <span class="tag">#Brazil</span>
+                <span class="tag">#Interview</span>
+            </div>
+        </div>
+        <div class="card">
+            <h3>How we met</h3>
+            <p>We've known each other since 9th grade, but the real magic happened in 11th grade. We shared the same class and friends. Even with me moving to Canada, our friendship stays strong!</p>
+        </div>
+    </div>
+</div>
+
+<!-- Slide 3: Hobbies -->
+<div class="slide-container">
+    <h2 class="slide-title">💃 What she loves</h2>
+    <div class="flex-row">
+        <div class="card" style="border-color: #fab1a0;">
+            <div style="font-size: 50px;">🕺</div>
+            <h3>Dancing</h3>
+            <p>It makes her feel alive and full of energy. It's her happy place!</p>
+        </div>
+        <div class="card" style="border-color: #55efc4;">
+            <div style="font-size: 50px;">🍿</div>
+            <h3>Movies</h3>
+            <p>She loves Horror and Suspense. She's the one who made me like them too!</p>
+        </div>
+        <div class="card" style="border-color: #a29bfe;">
+            <div style="font-size: 50px;">🎧</div>
+            <h3>Music</h3>
+            <p>She enjoys reflecting on her life while getting lost in her favorite songs.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Slide 4: Bahia & Accomplishments -->
+<div class="slide-container">
+    <h2 class="slide-title">📍 Bahia & Growth</h2>
+    <div class="flex-row">
+        <div class="photo-frame">
+            <!-- Imagem representando a Bahia (Salvador) -->
+            <img src="https://images.unsplash.com/photo-1599407952462-8946f041e17d?q=80&w=1000&auto=format&fit=crop" alt="[Imagem do Pelourinho na Bahia]">
+        </div>
+        <div style="flex: 1;">
+            <h3>Her First Home</h3>
+            <p>Bahia is her favorite place because it was her first home and where her family lives. It's all about roots!</p>
+            <h3 style="margin-top: 50px;">Communication Skills</h3>
+            <p>She's very proud of how much she improved her communication thanks to her work. She grew a lot!</p>
+        </div>
+    </div>
+</div>
+
+<!-- Slide 5: Deep Insights -->
+<div class="slide-container">
+    <h2 class="slide-title">🤔 Getting Real</h2>
+    <div class="flex-row">
+        <div class="card" style="flex: 1.5;">
+            <ul class="emoji-list">
+                <li><span>🚫</span> <p>She wishes she could eliminate her fear of judgment from others.</p></li>
+                <li><span>💓</span> <p>She wants people to know that she cares <strong>way more</strong> than it seems.</p></li>
+                <li><span>👀</span> <p>Surprise! She's more mischievous and clever than she looks!</p></li>
+            </ul>
+        </div>
+        <div style="flex: 0.5; text-align: center;">
+            <div style="font-size: 180px;">✨</div>
+        </div>
+    </div>
+</div>
+
+<!-- Slide 6: Future & Sacrifices -->
+<div class="slide-container" style="background: #fffdf9;">
+    <h2 class="slide-title">🚀 Future Dreams</h2>
+    <div class="flex-row">
+        <div style="flex: 1;">
+            <h3>A Life Goal</h3>
+            <p>One of her biggest dreams is to experience motherhood and become a mom one day.</p>
+            <h3 style="margin-top: 50px;">She could live without:</h3>
+            <div style="margin-top: 20px;">
+                <span class="tag" style="background: #ff7675;">Public Speaking</span>
+                <span class="tag" style="background: #ff7675;">Okra (Quiabo)</span>
+                <span class="tag" style="background: #ff7675;">Beetroot (Beterraba)</span>
+            </div>
+        </div>
+        <div style="font-size: 200px; opacity: 0.1;">🌟</div>
+    </div>
+</div>
+
+<!-- Slide 7: The End -->
+<div class="slide-container" style="background: #6c5ce7; border: none; text-align: center; color: white;">
+    <h1 style="color: white; font-size: 110px;">Thank you!</h1>
+    <p style="font-size: 36px; opacity: 0.9;">I hope you enjoyed learning about Julia.</p>
+</div>
+
+</body>
+</html>
